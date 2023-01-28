@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from './components/HeaderFolder/Header'
 import About from './components/aboutFolder/About'
-import Blog from './components/BlogFolder/Blog'
+import Portfolio from './components/PortfolioFolder/Portfolio'
 import Contact from './components/ContactFolder/Contact'
 import Footer from './components/FooterFolder/Footer'
-import Homepage from './components/HomePageFolder/Homepage'
+import Experience from './components/ExperienceFolder/Experience'
 import Navbar from './components/NavbarFolder/Navbar'
 import Showcase from './components/ShowcaseFolder/Showcase'
+import Services from './components/ServicesFolder/Services'
+import Testimonials from './components/TestimonialsFolder/Testimonials'
 
 const App = () => {
   return (
@@ -14,10 +16,12 @@ const App = () => {
     <Header />
     <Navbar />
     <About />
-    <Blog />
+    <Experience />
+    <Services />
+    <Portfolio />
+    <Testimonials />
     <Contact />
     <Footer />
-    <Homepage />
     <Showcase />
     </>
   )
