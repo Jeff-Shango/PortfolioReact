@@ -1,5 +1,5 @@
 header {
-    height: 150vh;
+    height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -70,14 +70,14 @@ header {
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     header {
-        height: 175vh;
+        height: 68vh;
     }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
     header {
-        height: 200vh;
+        height: 100vh;
     }
 
     .header_socials,
