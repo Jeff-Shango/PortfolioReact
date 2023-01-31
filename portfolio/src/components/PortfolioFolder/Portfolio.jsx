@@ -3,7 +3,10 @@ import './Portfolio.css'
 import img1 from '../../assets/gamecornerA.png'
 import img2 from '../../assets/truckingSite.png'
 import img3 from '../../assets/teacherCalcA.png'
-import img4 from '../../assets/'
+import img4 from '../../assets/dashboard.png'
+import img5 from '../../assets/DateListTracker.png'
+import img6 from '../../assets/originalPortfolio.png'
+
 const data = [
   {
     id: 1, 
@@ -33,6 +36,20 @@ const data = [
     github: "https://github.com/Jeff-Shango/dashboard.git",
     demo: "https://github.com/Jeff-Shango/dashboard.git"
   },
+  {
+    id: 5, 
+    image: img5,
+    title: "Date Night List Tracker",
+    github: "https://github.com/Jeff-Shango/todoapp.git",
+    demo: "https://github.com/Jeff-Shango/todoapp.git"
+  },
+  {
+    id: 6, 
+    image: img6,
+    title: "Original Portfolio",
+    github: "https://github.com/Jeff-Shango/Jeff-Bozier-Portfolio.git",
+    demo: "https://jeffbozierportfolio.netlify.app"
+  },
 ]
 const Portfolio = () => {
   return (
@@ -41,17 +58,22 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio_container">
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={img1} alt="pic" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-            <a href="https://github.com" className="btn" target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio_item">
+        {data.map(({id, image, title, github, demo}) => {
+          return(
+          <article key={id} className="portfolio_item">
+            <div className="portfolio_item-image">
+              <img src={image} alt="pic" />
+            </div>
+            <h3>This is a portfolio item title</h3>
+            <div className="portfolio_item-cta">
+              <a href={github} className="btn" target='_blank'>Github</a>
+              <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+          )
+        })
+        }
+        {/* <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={img2} alt="pic" />
           </div>
@@ -83,7 +105,7 @@ const Portfolio = () => {
         </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src={img1} alt="pic" />
+            <img src={img5} alt="pic" />
           </div>
           <h3>This is a portfolio item title</h3>
           <div className="portfolio_item-cta">
@@ -93,14 +115,14 @@ const Portfolio = () => {
         </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src={img1} alt="pic" />
+            <img src={img6} alt="pic" />
           </div>
           <h3>This is a portfolio item title</h3>
           <div className="portfolio_item-cta">
             <a href="https://github.com" className="btn" target='_blank'>Github</a>
             <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
-        </article>
+        </article> */}
       </div>
 
     </section>
