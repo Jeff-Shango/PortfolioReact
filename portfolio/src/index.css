@@ -8,8 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Source Sans 3', sans-serif;
     background-image: url(../src/assets/universeBackground.jpg);
-    /* background-size: cover; */
-    background-repeat: round;
+     background-size: contain; 
 }
 
 * {
