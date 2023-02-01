@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Portfolio.css'
 import img1 from '../../assets/gamecornerA.png'
 import img2 from '../../assets/truckingSite.png'
@@ -6,7 +6,7 @@ import img3 from '../../assets/teacherCalcA.png'
 import img4 from '../../assets/dashboard.png'
 import img5 from '../../assets/DateListTracker.png'
 import img6 from '../../assets/originalPortfolio.png'
-import '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const data = [
   {
@@ -53,6 +53,10 @@ const data = [
   },
 ]
 const Portfolio = () => {
+  useEffect(() => {
+    animateOnScroll();
+  }, []);
+  
   return (
     <section id='portfolio' className='animate-on-scroll'>
       <h5 className='portfolioTitle'>My Recent Work</h5>

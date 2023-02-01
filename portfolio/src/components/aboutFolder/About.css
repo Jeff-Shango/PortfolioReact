@@ -158,6 +158,10 @@
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
+#about {
+    margin-bottom: 16rem;
+}
+
     .about_container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -169,12 +173,46 @@
     }
 
     .about_content p {
-        margin: 1rem 0 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin: 1.5rem 0;
+        text-align: center;
+        color: var(--color-light);
+        background-color: rgba(114, 47, 55, 0.5);
+        padding: 2rem 2rem;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+}
+
+
+    .aboutTitleContent::after {
+        content: '';
+        height: 9rem;
+        width: 15rem;
+        position: absolute;
+        top: 0;
+        left: 35%;
+        background-color: rgba(114, 47, 55, 0.5);
+        z-index: -1;
+        border: 2px solid white;
+    }
+
+    .about_content a {
+        padding: .5rem 2rem;
+        font-size: x-large;
+        font-weight: bolder;
+        margin-left: 37%;
     }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
+    #about {
+        margin-bottom: 18rem;
+    }
     .about_me {
         width: 65%;
         margin: 0 auto 3rem;
@@ -190,6 +228,36 @@
     }
 
     .about_content p {
+        font-size: 1.2rem;
+        font-weight: bolder;
         margin: 1.5rem 0;
+        text-align: center;
+        color: var(--color-light);
+        background-color: rgba(114, 47, 55, 0.5);
+        padding: 2rem 2rem;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+}
+
+    .aboutTitleContent::after {
+        content: '';
+        height: 9rem;
+        width: 15rem;
+        position: absolute;
+        top: 0;
+        left: 21%;
+        background-color: rgba(114, 47, 55, 0.5);
+        z-index: -1;
+        border: 2px solid black;
+    }
+
+    .about_content a {
+        padding: .5rem 2rem;
+        font-size: x-large;
+        font-weight: bolder;
+        margin-left: 9%;
     }
 }

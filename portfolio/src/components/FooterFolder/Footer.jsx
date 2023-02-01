@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Footer.css'
 import {BsGithub} from 'react-icons/bs'
 import {AiFillLinkedin} from 'react-icons/ai'
-import '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const Footer = () => {
+  useEffect(() => {
+    animateOnScroll();
+  }, []);
   return (
     <footer className='animate-on-scroll'>
       <a href="#" className="footer_logo">Jeff B</a>

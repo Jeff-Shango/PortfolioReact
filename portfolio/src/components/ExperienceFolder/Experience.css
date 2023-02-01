@@ -35,7 +35,7 @@
 
 .experienceTitle::after {
     content: '';
-    border: 2px solid white;
+    border: 2px solid black;
     position: absolute;
     height: 5rem;
     width: 20rem;
@@ -44,6 +44,7 @@
     background-color:  rgba(114, 47, 55, 0.5);
     z-index: -1;
 }
+
 .experience_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,6 +101,9 @@
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
+    #experience {
+        margin-bottom: 15rem;
+    }
     .experience_container {
         grid-template-columns: 1fr;
     }
@@ -113,10 +117,25 @@
     .experience_content {
         padding: 1rem;
     }
+
+    .experienceTitle::after {
+        content: '';
+        border: 2px solid black;
+        position: absolute;
+        height: 5rem;
+        width: 15rem;
+        left: 33%;
+        top: 0;
+        background-color:  rgba(114, 47, 55, 0.5);
+        z-index: -1;
+    }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
+    #experience {
+        margin-bottom: 20rem;
+    }
     .experience_container {
         gap: 1rem;
     }
@@ -124,5 +143,17 @@
     .experience_container > div {
         width: 100%;
         padding: 2rem 1rem;
+    }
+
+    .experienceTitle::after {
+        content: '';
+        border: 2px solid black;
+        position: absolute;
+        height: 5rem;
+        width: 15rem;
+        left: 21.5%;
+        top: 0;
+        background-color:  rgba(114, 47, 55, 0.5);
+        z-index: -1;
     }
 }

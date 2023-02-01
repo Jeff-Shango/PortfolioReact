@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Testimonials.css'
 import mikePhoto from '../../assets/headshotWTruck.jpg'
-import '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const Testimonials = () => {
+  useEffect(() => {
+    animateOnScroll();
+  }, []);
+
   return (
     <section id='testimonials' className='animate-on-scroll'>
       <h5 className='testimonialTitle'>Review from clients</h5>

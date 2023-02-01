@@ -8,7 +8,6 @@ import Experience from './components/ExperienceFolder/Experience'
 import Navbar from './components/NavbarFolder/Navbar'
 import Services from './components/ServicesFolder/Services'
 import Testimonials from './components/TestimonialsFolder/Testimonials'
-import { animateOnScroll } from './functions/animateScrollFunctions'
 
 const App = () => {
   return (
@@ -22,7 +21,6 @@ const App = () => {
     <Testimonials />
     <Contact />
     <Footer />
-    <script src=""></script>
     </>
   )
 }

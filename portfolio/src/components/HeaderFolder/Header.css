@@ -34,26 +34,27 @@ header {
     height: 100%;
     position: relative;
     font-size: x-large;
+    font-weight: bolder;
 }
 
 .container-title::after {
     content: '';
-    border: 2px solid white;
+    border: 2px solid black;
     height: 11rem;
     width: 25rem;
     position: absolute;
     top: 0;
     left: 30%;
     background-color:  rgba(114, 47, 55, 0.5);
-    
+    z-index: -1;
 }
 
 /* CTA */
 .cta {
     margin-top: 2.5rem;
     display: flex;
-    gap: 1.2rem;
-    justify-content: center0;
+    gap: 3.5rem;
+    justify-content: center;
 }
 
 /* Header socials */
@@ -62,7 +63,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.5rem;
     position: absolute;
     bottom: 3rem;
     left: 0;
@@ -117,7 +118,19 @@ header {
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 100vh;
+    }
+
+    .container-title::after {
+        content: '';
+        border: 2px solid black;
+        height: 11rem;
+        width: 15rem;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        background-color:  rgba(114, 47, 55, 0.5);
+        z-index: -1;
     }
 }
 
@@ -130,5 +143,17 @@ header {
     .header_socials,
     .scroll_down {
         display: none;
+    }
+
+    .container-title::after {
+        content: '';
+        border: 2px solid black;
+        height: 11rem;
+        width: 15rem;
+        position: absolute;
+        top: 0;
+        left: 18%;
+        background-color:  rgba(114, 47, 55, 0.5);
+        z-index: -1;
     }
 }

@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Header.css'
 import Resume from './CTA'
 import profilePic from '../../assets/profilepic.png'
 import HeaderSocials from './HeaderSocials'
-import '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const Header = () => {
+  useEffect(() => {
+    animateOnScroll();
+  }, []);
+
   return (
     <header>
       <div className='container header_container'>

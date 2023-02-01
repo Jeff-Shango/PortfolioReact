@@ -1,11 +1,15 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import "./Contact.css"
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsGithub} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
-import '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const Contact = () => {
+  useEffect(() => {
+    animateOnScroll();
+  }, []);
+
   const form = useRef();
 
   const sendEmail = (e) => {

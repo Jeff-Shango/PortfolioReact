@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Services.css'
 import {BiCheck} from 'react-icons/bi'
 import '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const Services = () => {
+  useEffect(() => {
+    animateOnScroll();
+  }, []);
+
   return (
     <section id='services' className='animate-on-scroll'>
       <h5 className='servicesTitle'>What I Offer</h5>

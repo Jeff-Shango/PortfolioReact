@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./About.css"
 import aboutMeImage from "../../assets/abourImg.png"
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
-import {animateOnScroll} from '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
-class About extends React.Component {
-  componentDidMount(){
+
+
+const About = () => {
+  useEffect(() => {
     animateOnScroll();
-  }
-}
+  }, []);
 
-About = () => {
   return (
     <section id='about' className='animate-on-scroll'>
       <h5 className='aboutTitleContent'>Get to Know</h5>

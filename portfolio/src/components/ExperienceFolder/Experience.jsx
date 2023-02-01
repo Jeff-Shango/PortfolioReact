@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import '../../functions/animateScrollFunctions'
+import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const Experience = () => {
+  useEffect(() => {
+    animateOnScroll();
+  }, []);
+
   return (
     <section id='experience' className='animate-on-scroll'>
       <h5 className='experienceTitle'>What Skills I Have</h5>
