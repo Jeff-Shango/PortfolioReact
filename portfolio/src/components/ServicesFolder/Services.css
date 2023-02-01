@@ -1,3 +1,25 @@
+#services {
+    position: relative;
+}
+
+.servicesTitle {
+    font-size: x-large;
+    color: white;
+    font-weight: bolder;
+}
+
+.servicesTitle::after{
+    content: '';
+    position: absolute;
+    border: 2px solid white;
+    height: 6rem;
+    width: 15rem;
+    left: 41%;
+    top: 0;
+    background-color: rgba(114, 47, 55, 0.5);
+    z-index: -1;
+}
+
 .services_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -38,8 +60,8 @@
 }
 
 .service_head h3 {
-    color: var(--color-bg);
-    font-size: 1rem;
+    color: black;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -56,6 +78,10 @@
 .service_list-icon {
     /* color: var(--color-primary); */
     margin-top: 2px;
+}
+
+.lastIcon {
+    font-size: 4rem;
 }
 
 .service_list p {

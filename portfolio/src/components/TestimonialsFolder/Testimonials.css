@@ -1,5 +1,27 @@
+#testimonials {
+    position: relative;
+}
+.testimonialTitle {
+    font-weight: bolder;
+    color: white;
+    font-size: x-large;
+}
+
+.testimonialTitle::after{
+    content: '';
+    border: 2px solid white;
+    position: absolute;
+    height: 5rem;
+    width: 15rem;
+    left: 41%;
+    top: 0;
+    background-color:  rgba(114, 47, 55, 0.5);
+    z-index: -1;
+}
+
 .container.testimonials_container {
     width: 40%;
+    font-size: x-large;
 }
 
 .client_avatar {

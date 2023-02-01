@@ -1,10 +1,32 @@
+#portfolio {
+    position: relative;
+}
+
+.portfolioTitle {
+    font-size: x-large;
+    color: white;
+    font-weight: bolder;
+}
+
+.portfolioTitle::after {
+    content: '';
+    border: 2px solid white;
+    position: absolute;
+    width: 13rem;
+    height: 6rem;
+    left: 42%;
+    top: 0;
+    background-color: rgba(114, 47, 55, 0.5);
+    z-index: -1;
+}
 .portfolio_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .portfolio_item {
+    text-align: center;
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 2rem;
@@ -42,6 +64,11 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.portfolioButtons {
+    font-size: x-large;
 }
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {

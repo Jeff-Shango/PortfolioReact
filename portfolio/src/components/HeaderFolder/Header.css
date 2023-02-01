@@ -8,6 +8,19 @@ header {
     text-align: center;
     height: 100%;
     position: relative;
+    font-size: x-large;
+}
+
+.container-title::after {
+    content: '';
+    border: 2px solid white;
+    height: 11rem;
+    width: 25rem;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    background-color:  rgba(114, 47, 55, 0.5);
+    
 }
 
 /* CTA */
@@ -32,9 +45,17 @@ header {
 
 .header_socials::after {
     content: "";
-    width: 1px;
+    width: 10px;
     height: 2rem;
     background: var(--color-primary);
+}
+
+.header_socials a {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
 }
 
 /* ME */
@@ -64,7 +85,8 @@ header {
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 2.5rem;
+    background: var();
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */

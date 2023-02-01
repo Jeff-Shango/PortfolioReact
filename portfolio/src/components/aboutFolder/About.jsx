@@ -2,13 +2,12 @@ import React from 'react'
 import "./About.css"
 import aboutMeImage from "../../assets/abourImg.png"
 import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 const About = () => {
   return (
     <section id='about'>
-      <h5>Get to Know</h5>
-      <h2>About Me</h2>
+      <h5 className='aboutTitleContent'>Get to Know</h5>
+      <h2 className='aboutTitleContent'>About Me</h2>
 
       <div className="container about_container">
         <div className="about_me">
@@ -23,13 +22,7 @@ const About = () => {
             <article className="about_card">
               <FaAward className='about_icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
-
-            <article className="about_card">
-              <FiUsers className='about_icon'/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>2 Years Working</small>
             </article>
 
             <article className="about_card">
@@ -39,7 +32,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, fugiat perferendis! Aliquid rem, suscipit maiores, quos pariatur eligendi hic libero deserunt amet distinctio harum, enim labore atque molestiae architecto culpa!
+          Meet Jeff Bozier, a skilled software engineer from Baltimore, MD with extensive experience in full cycle web development. With a passion for creating innovative and user-friendly web solutions, Jeff is always eager to discuss future projects and opportunities in the software engineering field. Get in touch with him today to see how he can help with your development needs.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>

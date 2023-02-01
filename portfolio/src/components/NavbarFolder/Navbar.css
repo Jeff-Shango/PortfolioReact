@@ -1,11 +1,10 @@
 nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
-    display: flex;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
-    left: 50%;
+    right: .5%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
