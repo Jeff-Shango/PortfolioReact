@@ -3,6 +3,7 @@ import './Header.css'
 import Resume from './CTA'
 import profilePic from '../../assets/profilepic.png'
 import HeaderSocials from './HeaderSocials'
+import '../../functions/animateScrollFunctions'
 
 const Header = () => {
   return (

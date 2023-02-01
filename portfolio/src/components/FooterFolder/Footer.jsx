@@ -2,9 +2,11 @@ import React from 'react'
 import './Footer.css'
 import {BsGithub} from 'react-icons/bs'
 import {AiFillLinkedin} from 'react-icons/ai'
+import '../../functions/animateScrollFunctions'
+
 const Footer = () => {
   return (
-    <footer>
+    <footer className='animate-on-scroll'>
       <a href="#" className="footer_logo">Jeff B</a>
 
       <ul className="permalinks">

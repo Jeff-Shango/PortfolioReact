@@ -1,10 +1,11 @@
 import React from 'react'
 import './Experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
+import '../../functions/animateScrollFunctions'
 
 const Experience = () => {
   return (
-    <section id='experience'>
+    <section id='experience' className='animate-on-scroll'>
       <h5 className='experienceTitle'>What Skills I Have</h5>
       <h2 className='experienceTitle'>My Experience</h2>
 

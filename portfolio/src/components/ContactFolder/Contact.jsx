@@ -3,6 +3,7 @@ import "./Contact.css"
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsGithub} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
+import '../../functions/animateScrollFunctions'
 
 const Contact = () => {
   const form = useRef();
@@ -21,9 +22,9 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact'>
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+    <section id='contact' className='animate-on-scroll'>
+      <h5 className='contactTitle'>Get In Touch</h5>
+      <h2 className='contactTitle'>Contact Me</h2>
 
       <div className="container contact_container">
         <div className="contact_options">
@@ -32,20 +33,31 @@ const Contact = () => {
             <h4>Email</h4>
             <h5>Jeff.BozierJr@gmail.com</h5>
             <h5>Send an Email</h5>
-            <a href="mailto:jeff.bozierjr@gmail.com" target="_blank">Send a Message</a>
+            <a href="mailto:jeff.bozierjr@gmail.com" className='btn btn-primary' target="_blank">Send a Message</a>
           </article>
           <article className="contact_option">
             <BsGithub className='contact_option-icon'/>
             <h4>LinkedIn</h4>
             <h5>Send a message through LinkedIn</h5>
-            <a href="https://www.linkedin.com/in/jeff-bozier-jr/" target="_blank">Send a Message</a>
+            <a href="https://www.linkedin.com/in/jeff-bozier-jr/" className='btn btn-primary' target="_blank">Send a Message</a>
           </article>
         </div>
         {/* End of Contact Options */}
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="text" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+          <div className="inputBox">
+            <input type="text" name='name' required />
+            <span>Your Name</span>
+          </div>
+
+          <div className="inputBox">
+            <input type="text" name='email'  required />
+            <span>Your Email</span>
+          </div>
+
+          <div className="inputBox">
+            <textarea name="message" rows="7"  required></textarea>
+            <span>Your Message</span>
+          </div>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
       </div>

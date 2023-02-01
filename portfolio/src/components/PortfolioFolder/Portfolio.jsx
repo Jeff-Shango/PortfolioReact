@@ -6,6 +6,7 @@ import img3 from '../../assets/teacherCalcA.png'
 import img4 from '../../assets/dashboard.png'
 import img5 from '../../assets/DateListTracker.png'
 import img6 from '../../assets/originalPortfolio.png'
+import '../../functions/animateScrollFunctions'
 
 const data = [
   {
@@ -53,7 +54,7 @@ const data = [
 ]
 const Portfolio = () => {
   return (
-    <section id='portfolio'>
+    <section id='portfolio' className='animate-on-scroll'>
       <h5 className='portfolioTitle'>My Recent Work</h5>
       <h2 className='portfolioTitle'>Portfolio</h2>
 

@@ -3,9 +3,17 @@ import "./About.css"
 import aboutMeImage from "../../assets/abourImg.png"
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
-const About = () => {
+import {animateOnScroll} from '../../functions/animateScrollFunctions'
+
+class About extends React.Component {
+  componentDidMount(){
+    animateOnScroll();
+  }
+}
+
+About = () => {
   return (
-    <section id='about'>
+    <section id='about' className='animate-on-scroll'>
       <h5 className='aboutTitleContent'>Get to Know</h5>
       <h2 className='aboutTitleContent'>About Me</h2>
 

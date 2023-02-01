@@ -1,10 +1,11 @@
 import React from 'react'
 import './Services.css'
 import {BiCheck} from 'react-icons/bi'
+import '../../functions/animateScrollFunctions'
 
 const Services = () => {
   return (
-    <section id='services'>
+    <section id='services' className='animate-on-scroll'>
       <h5 className='servicesTitle'>What I Offer</h5>
       <h2 className='servicesTitle'>Services</h2>
 

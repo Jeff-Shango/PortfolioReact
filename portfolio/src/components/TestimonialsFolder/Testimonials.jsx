@@ -1,10 +1,11 @@
 import React from 'react'
 import './Testimonials.css'
 import mikePhoto from '../../assets/headshotWTruck.jpg'
+import '../../functions/animateScrollFunctions'
 
 const Testimonials = () => {
   return (
-    <section id='testimonials'>
+    <section id='testimonials' className='animate-on-scroll'>
       <h5 className='testimonialTitle'>Review from clients</h5>
       <h2 className='testimonialTitle'>Testimonials</h2>
 
