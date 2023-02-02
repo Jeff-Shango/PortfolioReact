@@ -22,3 +22,9 @@ export const animateOnScroll = () => {
         observer.observe(element);
     });
 }
+
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    console.log('width' + width, 'height' + height);
+    console.log("be happy");

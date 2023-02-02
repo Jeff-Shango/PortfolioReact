@@ -21,7 +21,7 @@ const Testimonials = () => {
           </div>
           <h5 className="client_name">Michael Wright</h5>
             <small className="client_review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae assumenda perspiciatis veniam. Quia error, doloribus aut aliquam eos rerum numquam.
+              Convenient. Very punctual. Pays attention to detail. Team player. Look out web designers, new sheriff in town <br />-Only Wright Trucking, LLC
             </small>
         </article>
       </div>

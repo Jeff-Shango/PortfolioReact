@@ -34,7 +34,7 @@
 
 .contactTitle::after {
     content: '';
-    border: 2px solid white;
+    border: 2px solid black;
     width: 13rem;
     height: 6.5rem;
     position: absolute;
@@ -182,15 +182,105 @@ form button {
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
+    #contact {
+        height: fit-content;
+        margin-bottom: 10rem;
+    }
+
     .container.contact_container {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .contactTitle::after {
+        content: '';
+        border: 2px solid black;
+        width: 13rem;
+        height: 6.5rem;
+        position: absolute;
+        top: 0;
+        left: 36.5%;
+        background-color: rgba(114, 47, 55, 0.5);
+        z-index: -1;
+    }
+
+    .contact_option {
+        font-size: 2.5rem;
+        background: var(--color-bg-variant);
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        -ms-border-radius: 1.2rem;
+        -o-border-radius: 1.2rem;
+        text-align: center;
+        border: 1px solid transparent;
+        transition: var(--transition);
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+    }
+
+    .contact_option a {
+        margin-top: 0.7rem;
+        display: inline-block;
+        font-size: 2rem;
     }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
+
+    #contact {
+        height: fit-content;
+    }
+
     .container.contact_container {
         width: var(--container-width-sm);
+
     }
+
+    .contactTitle::after {
+        content: '';
+        border: 2px solid black;
+        width: 13rem;
+        height: 6.5rem;
+        position: absolute;
+        top: 0;
+        left: 25%;
+        background-color: rgba(114, 47, 55, 0.5);
+        z-index: -1;
+    }
+
+    .contact_option {
+        font-size: 2.5rem;
+        background: var(--color-bg-variant);
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        -ms-border-radius: 1.2rem;
+        -o-border-radius: 1.2rem;
+        text-align: center;
+        border: 1px solid transparent;
+        transition: var(--transition);
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+    }
+
+    .contact_option a {
+        margin-top: 0.7rem;
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+    form button {
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-left: 4rem;
+    }
+
 }
