@@ -7,8 +7,10 @@ body {
     font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Source Sans 3', sans-serif;
-    background-image: url(../src/assets/backgroundCanva.png);
-    background-size: contain; 
+    /* background-image: url(../src/assets/baltimoreSkyline.jpg); */
+    background-image: url(../src/assets/universeBackground.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100vh;
 }
 
 * {
