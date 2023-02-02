@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Source+Sans+3&display=swap');
 
+    #loader {
+        border: 16px solid lightgray;
+        border-top: 16px solid red;
+        border-right: 16px solid green;
+        border-bottom: 16px solid red;
+        border-left: 16px solid green;
+        background-image: url('../src/assets/logoSolo.png');
+        background-size: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        animation: spin 2s linear infinite;
+        -webkit-animation: spin 2s linear infinite;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+}
+
 body {
     background: var(--color-bg);
     color: var(--color-white);
@@ -8,9 +32,12 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Source Sans 3', sans-serif;
     /* background-image: url(../src/assets/baltimoreSkyline.jpg); */
+    /* background-image: url(../src/assets/oceanBackground.png); */
     background-image: url(../src/assets/universeBackground.jpg);
     background-attachment: fixed;
-    background-size: 100% 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 * {
