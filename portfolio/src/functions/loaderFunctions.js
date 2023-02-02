@@ -13,14 +13,14 @@ window.onresize = function() {
     console.log('resize');
 }
 
-function checkScreen() {
+export function checkScreen() {
 if (x > 500) {
     function loaderFunction() {
             loader = setTimeout(showPage, 3000);
         }
         
         function showPage() {
-            document.getElementById('myDiv').style.display = 'block';
+            document.getElementById('root').style.display = 'block';
             document.getElementById('loader').style.opacity = '0';
             document.getElementById('loader').style.transition = '.5s';
         }
@@ -32,7 +32,7 @@ if (x > 500) {
             }
             
             function showMobilePage() {
-                document.getElementById('myDiv').style.display = 'block';
+                document.getElementById('root').style.display = 'block';
                 document.getElementById('loader').style.display = 'none';
                 document.getElementById('defaultCanvas0').style.display = 'block';
                 
