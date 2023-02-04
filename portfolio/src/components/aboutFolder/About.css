@@ -212,7 +212,8 @@
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
     #about {
-        margin-bottom: 1000rem;
+        margin-bottom: 45rem;
+        border: 2px solid white;
     }
     .about_me {
         width: 65%;
