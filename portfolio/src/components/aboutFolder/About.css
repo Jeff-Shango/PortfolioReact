@@ -212,7 +212,7 @@
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
     #about {
-        margin-bottom: 35rem;
+        margin-bottom: 40rem;
     }
     .about_me {
         width: 65%;
