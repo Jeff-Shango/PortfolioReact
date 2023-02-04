@@ -28,18 +28,19 @@
 }
 
 .portfolioTitle {
-    font-size: x-large;
+    font-size: xx-large;
     color: white;
     font-weight: bolder;
+    margin-bottom: 2rem;
 }
 
 .portfolioTitle::after {
     content: '';
     border: 2px solid black;
     position: absolute;
-    width: 13rem;
-    height: 6rem;
-    left: 42%;
+    width: 8rem;
+    height: 3rem;
+    left: 45%;
     top: 0;
     background-color: rgba(114, 47, 55, 0.5);
     z-index: -1;
@@ -110,7 +111,7 @@
         border: 2px solid black;
         position: absolute;
         width: 13rem;
-        height: 6rem;
+        height: 3rem;
         left: 36%;
         top: 0;
         background-color: rgba(114, 47, 55, 0.5);
@@ -133,7 +134,7 @@
         border: 2px solid black;
         position: absolute;
         width: 13rem;
-        height: 6rem;
+        height: 3.5rem;
         left: 25%;
         top: 0;
         background-color: rgba(114, 47, 55, 0.5);

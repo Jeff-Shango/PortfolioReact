@@ -30,13 +30,15 @@
 .contactTitle {
     font-size: 2rem;
     color: white;
+    font-weight: bolder;
+    margin-bottom: 2.5rem;
 }
 
 .contactTitle::after {
     content: '';
     border: 2px solid black;
     width: 13rem;
-    height: 6.5rem;
+    height: 4.5rem;
     position: absolute;
     top: 0;
     left: 42.2%;
@@ -196,7 +198,7 @@ form button {
         content: '';
         border: 2px solid black;
         width: 13rem;
-        height: 6.5rem;
+        height: 4.5rem;
         position: absolute;
         top: 0;
         left: 36.5%;
@@ -209,10 +211,10 @@ form button {
         background: var(--color-bg-variant);
         padding: 1.2rem;
         border-radius: 1.2rem;
-        -webkit-border-radius: 1.2rem;
-        -moz-border-radius: 1.2rem;
-        -ms-border-radius: 1.2rem;
-        -o-border-radius: 1.2rem;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
         text-align: center;
         border: 1px solid transparent;
         transition: var(--transition);
@@ -220,7 +222,7 @@ form button {
         -moz-transition: var(--transition);
         -ms-transition: var(--transition);
         -o-transition: var(--transition);
-    }
+}
 
     .contact_option a {
         margin-top: 0.7rem;
@@ -245,7 +247,7 @@ form button {
         content: '';
         border: 2px solid black;
         width: 13rem;
-        height: 6.5rem;
+        height: 4.5rem;
         position: absolute;
         top: 0;
         left: 25%;

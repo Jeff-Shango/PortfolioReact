@@ -31,18 +31,19 @@
     font-weight: 700;
     color: var(--color-white);
     line-height: 4rem;
+    margin-bottom: 10rem;
 }
 
 .aboutTitleContent::after {
     content: '';
-    height: 9rem;
-    width: 25rem;
+    height: 5rem;
+    width: 15rem;
     position: absolute;
     top: 0;
-    left: 35%;
+    left: 41%;
     background-color: rgba(114, 47, 55, 0.5);
     z-index: -1;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 .about_container {
@@ -190,14 +191,14 @@
 
     .aboutTitleContent::after {
         content: '';
-        height: 9rem;
+        height: 4rem;
         width: 15rem;
         position: absolute;
         top: 0;
         left: 35%;
         background-color: rgba(114, 47, 55, 0.5);
         z-index: -1;
-        border: 2px solid white;
+        border: 2px solid black;
     }
 
     .about_content a {
@@ -244,7 +245,7 @@
 
     .aboutTitleContent::after {
         content: '';
-        height: 9rem;
+        height: 4rem;
         width: 15rem;
         position: absolute;
         top: 0;

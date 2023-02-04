@@ -31,15 +31,16 @@
     font-size: x-large;
     color: white;
     font-weight: bolder;
+    margin-bottom: 3rem;
 }
 
 .servicesTitle::after{
     content: '';
     position: absolute;
     border: 2px solid black;
-    height: 6rem;
-    width: 15rem;
-    left: 41%;
+    height: 3.5rem;
+    width: 12rem;
+    left: 43%;
     top: 0;
     background-color: rgba(114, 47, 55, 0.5);
     z-index: -1;
@@ -131,7 +132,7 @@
         content: '';
         position: absolute;
         border: 2px solid black;
-        height: 6rem;
+        height: 4rem;
         width: 15rem;
         left: 34%;
         top: 0;
@@ -152,7 +153,7 @@
         content: '';
         position: absolute;
         border: 2px solid black;
-        height: 6rem;
+        height: 3.5rem;
         width: 15rem;
         left: 22%;
         top: 0;

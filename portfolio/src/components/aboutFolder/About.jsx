@@ -14,8 +14,7 @@ const About = () => {
 
   return (
     <section id='about' className='animate-on-scroll'>
-      <h5 className='aboutTitleContent'>Get to Know</h5>
-      <h2 className='aboutTitleContent'>About Me</h2>
+        <h5 className='aboutTitleContent'>Get to Know Me</h5>
 
       <div className="container about_container">
         <div className="about_me">

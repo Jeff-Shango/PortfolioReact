@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import './Experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
-import '../../functions/animateScrollFunctions'
 import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const Experience = () => {
@@ -11,8 +10,7 @@ const Experience = () => {
 
   return (
     <section id='experience' className='animate-on-scroll'>
-      <h5 className='experienceTitle'>What Skills I Have</h5>
-      <h2 className='experienceTitle'>My Experience</h2>
+      <h5 className='experienceTitle'>My Experience</h5>
 
       <div className="container experience_container">
         <div className="experience_frontend">

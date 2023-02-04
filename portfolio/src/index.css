@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Source+Sans+3&display=swap');
 
-    #loader {
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    background-image: url(../src/assets/logo3d.gif);
+}
+
+    /* #loader {
         border: 16px solid lightgray;
         border-top: 16px solid red;
         border-right: 16px solid green;
@@ -27,7 +40,7 @@
 @keyframes spin {
     0% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
     100% { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
-}
+} */
 
 body {
     background: var(--color-bg);

@@ -28,7 +28,6 @@ const Contact = () => {
   return (
     <section id='contact' className='animate-on-scroll'>
       <h5 className='contactTitle'>Get In Touch</h5>
-      <h2 className='contactTitle'>Contact Me</h2>
 
       <div className="container contact_container">
         <div className="contact_options">

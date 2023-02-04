@@ -59,8 +59,7 @@ const Portfolio = () => {
   
   return (
     <section id='portfolio' className='animate-on-scroll'>
-      <h5 className='portfolioTitle'>My Recent Work</h5>
-      <h2 className='portfolioTitle'>Portfolio</h2>
+      <h5 className='portfolioTitle'>Portfolio</h5>
 
       <div className="container portfolio_container">
         {data.map(({id, image, title, github, demo}) => {
