@@ -212,7 +212,7 @@
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
     #about {
-        margin-bottom: 18rem;
+        margin-bottom: 29rem;
     }
     .about_me {
         width: 65%;
@@ -249,7 +249,7 @@
         width: 15rem;
         position: absolute;
         top: 0;
-        left: 21%;
+        left: 19%;
         background-color: rgba(114, 47, 55, 0.5);
         z-index: -1;
         border: 2px solid black;
