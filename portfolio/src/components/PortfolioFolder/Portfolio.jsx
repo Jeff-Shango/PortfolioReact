@@ -6,15 +6,23 @@ import img3 from '../../assets/teacherCalcA.png'
 import img4 from '../../assets/dashboard.png'
 import img5 from '../../assets/DateListTracker.png'
 import img6 from '../../assets/originalPortfolio.png'
+import img7 from '../../assets/img7.png'
 import { animateOnScroll } from '../../functions/animateScrollFunctions'
 
 const data = [
+  // {
+  //   id: 1, 
+  //   image: img1,
+  //   title: "Shango's Game Corner",
+  //   github: "https://github.com/Jeff-Shango/word-game.git",
+  //   demo: "https://github.com/Jeff-Shango/word-game.git"
+  // },
   {
     id: 1, 
-    image: img1,
-    title: "Shango's Game Corner",
-    github: "https://github.com/Jeff-Shango/word-game.git",
-    demo: "https://github.com/Jeff-Shango/word-game.git"
+    image: img7,
+    title: "Bozier Wedding Website",
+    github: "https://github.com/Jeff-Shango/bobawedding",
+    demo: "https://bozierwedding.netlify.app"
   },
   {
     id: 2, 
@@ -23,27 +31,27 @@ const data = [
     github: "https://github.com/Jeff-Shango/OnlyWrightTraining.git",
     demo: "https://onlywrighttrucking.netlify.app"
   },
-  {
-    id: 3, 
-    image: img3,
-    title: "Teacher Grade Tracker",
-    github: "https://github.com/Jeff-Shango/GradeTracker.git",
-    demo: "https://github.com/Jeff-Shango/GradeTracker.git"
-  },
-  {
-    id: 4, 
-    image: img4,
-    title: "Dashboard using React",
-    github: "https://github.com/Jeff-Shango/dashboard.git",
-    demo: "https://github.com/Jeff-Shango/dashboard.git"
-  },
-  {
-    id: 5, 
-    image: img5,
-    title: "Date Night List Tracker",
-    github: "https://github.com/Jeff-Shango/todoapp.git",
-    demo: "https://github.com/Jeff-Shango/todoapp.git"
-  },
+  // {
+  //   id: 3, 
+  //   image: img3,
+  //   title: "Teacher Grade Tracker",
+  //   github: "https://github.com/Jeff-Shango/GradeTracker.git",
+  //   demo: "https://github.com/Jeff-Shango/GradeTracker.git"
+  // },
+  // {
+  //   id: 4, 
+  //   image: img4,
+  //   title: "Dashboard using React",
+  //   github: "https://github.com/Jeff-Shango/dashboard.git",
+  //   demo: "https://github.com/Jeff-Shango/dashboard.git"
+  // },
+  // {
+  //   id: 5, 
+  //   image: img5,
+  //   title: "Date Night List Tracker",
+  //   github: "https://github.com/Jeff-Shango/todoapp.git",
+  //   demo: "https://github.com/Jeff-Shango/todoapp.git"
+  // },
   {
     id: 6, 
     image: img6,
